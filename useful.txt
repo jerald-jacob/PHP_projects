@@ -18,3 +18,6 @@ RewriteRule ^user/([0-9a-zA-Z]+)$ user.php?u=$1 [NC,L]
 RewriteRule ^article/([0-9]+)/([0-9a-zA-Z_-]+)$ article.php?id=$1&title=$2 [NC,L]
 
 
+https://www.webslesson.info/2017/06/make-dynamic-xml-sitemap-in-php-script.html
+
+
