@@ -20,4 +20,12 @@ RewriteRule ^article/([0-9]+)/([0-9a-zA-Z_-]+)$ article.php?id=$1&title=$2 [NC,L
 
 https://www.webslesson.info/2017/06/make-dynamic-xml-sitemap-in-php-script.html
 
+Insert special characters into db
 
+if(extract($_POST))
+{
+function clean($string) {
+   $string = str_replace("'", "''", $string); // Replaces all spaces with hyphens.
+
+   return preg_replace('/^[A-Za-z][A-Za-z0-9@#%&*]*$/', ' ', $string); // Removes special chars.
+}
